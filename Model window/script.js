@@ -23,3 +23,13 @@ for (let i = 0; i < btnsOpenModel.length; i++)
 
 btnCloseModel.addEventListener('click', closeModel);
 overlay.addEventListener('click', closeModel);
+
+document.addEventListener('keydown', function (e) {
+    console.log(e.key);
+
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModel();
+    }
+});
+
+//If model contains the class hidden then it means model is not visible
