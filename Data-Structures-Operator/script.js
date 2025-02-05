@@ -111,7 +111,17 @@ const restaurant = {
     orderDelivary: function ({ starterIndex = 1, mainIndex = 0, time = '20 :00', address }) {
         console.log(`Order recieved! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`);
     },
+
+    orderPasta: function (ing1, ing2, ing3) {
+        console.log(`Here is your delecious pasta with ${ing1},${ing2} and ${ing3}`);
+    },
+
+    orderPizza: function (mainIngrediant, ...otherIngrediants) {  //rest
+        console.log(mainIngrediant);
+        console.log(otherIngrediants);
+    }
 };
+
 restaurant.orderDelivary({
     time: '22:30',
     address: 'Via del Sole, 21',
@@ -124,7 +134,30 @@ restaurant.orderDelivary({
     address: 'Via del Sole, 21',
     starterIndex: 1,
 
-})
+});
+
+restaurant.orderPizza('mushroom', 'onion', 'olives', 'spinatch');
+restaurant.orderPizza('mushroom');
+
+// const ingrediants = [prompt("Let\s make pasta! Ingrediant 1?"),
+// prompt('Ingrediant 2 ?'),
+// prompt('Ingrediant 3 ?'),
+// ];
+// console.log(ingrediants);
+
+// // restaurant.orderPasta(ingrediants[0], ingrediants[1], ingrediants[2]);
+// //Or
+// restaurant.orderPasta(...ingrediants);
+
+//Objects
+// const newRestaurant = { foundIn: 1998, ...restaurant, founder: 'guiseppe' };
+// console.log(newRestaurant);
+
+// const restuarantCopy = { ...restaurant };
+// restuarantCopy.name = 'Ristorante Roma';
+// console.log(restuarantCopy);
+// console.log(restaurant.name);
+
 // //Destructuring the objects
 // const { name, openingHours, categories } = restaurant;
 // console.log(name, openingHours, categories);
@@ -162,32 +195,69 @@ restaurant.orderDelivary({
 // const { fri: { open: o, close: c } } = openingHours;
 // console.log(o, c);
 
-//Spread operator
-const arr = [7, 8, 9];
-const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
-console.log(badNewArr);
-//Instead 
-const newArr = [1, 2, ...arr];
-console.log(newArr);
-//Seperate
-console.log(...newArr);
-console.log(1, 2, 7, 8, 9);
+// //Spread operator
+// const arr = [7, 8, 9];
+// const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+// console.log(badNewArr);
+// //Instead
+// const newArr = [1, 2, ...arr];
+// console.log(newArr);
+// //Seperate
+// console.log(...newArr);
+// console.log(1, 2, 7, 8, 9);
 
 
-const newMenu = [...restaurant.mainMenu, 'Gnocci'];
-console.log(newMenu);
-//spread operator is similar to structuring
+// const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+// console.log(newMenu);
+// //spread operator is similar to structuring
 
-//Copy array
-const mainMenuCopy = [...restaurant.mainMenu];
+// //Copy array
+// const mainMenuCopy = [...restaurant.mainMenu];
 
-//Join 2 arrays
-const menu = [...mainMenuCopy, ...restaurant.starterMenu];
-console.log(menu);
+// //Join 2 arrays
+// const menu = [...mainMenuCopy, ...restaurant.starterMenu];
+// console.log(menu);
 
-//Iterables arrays,strings ,maps ,sets.NOT objects
-const str = 'Jonas';
-const letters = [...str, ' ', 'S.'];
-console.log(letters);
-console.log(...str);
-// console.log(`${...str} blblblb`);   //Error ,its npt a place which expects multiple values sepearated by comma,it is expected when we pass arguments
+// //Iterables arrays,strings ,maps ,sets.NOT objects
+// const str = 'Jonas';
+// const letters = [...str, ' ', 'S.'];
+// console.log(letters);
+// console.log(...str);
+// // console.log(`${...str} blblblb`);   //Error ,its not a place which expects multiple values sepearated by comma,that is expected only when we pass arguments.
+
+
+// //Rest Operator
+// //SPREAD, because on RIGHT side of =
+// //to unpack elements from an array or object
+// const arr = [1, 2, ...[3, 4]];
+
+// //REST, because on LEFT side of =
+// //collect the remaining elements into a new array
+// const [a, b, ...others] = [1, 2, 3, 4, 5];
+// console.log(a, b, others);
+
+// //Skipping in Array Destructuring
+// const [pizza, , risotto, ...otherFood] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(pizza, risotto, otherFood);
+
+// //Objects
+// //Skipping in Object Destructuring
+// const { sat, ...weekdays } = restaurant.openingHours;
+// console.log(weekdays)
+// //to separate one property (sat) from the restaurant.openingHours object and collect the remaining properties into a new object.
+
+
+//Functions
+// const add = function (...numbers) {
+//   let sum = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//     sum += numbers[i];
+//   } console.log(sum);
+
+// };
+// add(2, 3);
+// add(5, 3, 7, 2);
+// add(8, 2, 5, 3, 2, 1, 4);
+
+// const x = [23, 5, 7];
+// add(...x);
