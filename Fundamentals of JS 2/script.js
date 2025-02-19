@@ -143,6 +143,7 @@ HINT: To check if number A is at least double number B, check for A >= 2 * B. Ap
 // console.log(scoreDolphins, scoreKoalas);
 // checkWinner(scoreDolphins, scoreKoalas);
 
+
 //Arrays
 // const friend1 = "Dany";
 // const friend2 = "Candy";
