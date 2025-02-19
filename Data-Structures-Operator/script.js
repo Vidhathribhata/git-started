@@ -449,58 +449,58 @@ team2 < team1 && console.log(`Team 2 is more likely to win`);
 
 const weekdays = ['mon', 'tue', 'wed', 'thur', 'fri', 'sat', 'sun'];
 const openingHours = {
-    // thu: {
-    //   open: 12,
-    //   close: 22,
-    // },
-    [weekdays[3]]: {
-        open: 12,
-        close: 22,
-    },
-    fri: {
-        open: 11,
-        close: 23,
-    },
-    sat: {
-        open: 0, // Open 24 hours
-        close: 24,
-    },
+  // thu: {
+  //   open: 12,
+  //   close: 22,
+  // },
+  [weekdays[3]]: {
+    open: 12,
+    close: 22,
+  },
+  fri: {
+    open: 11,
+    close: 23,
+  },
+  sat: {
+    open: 0, // Open 24 hours
+    close: 24,
+  },
 };
 
 const restaurant = {
-    name: 'Classico Italiano',
-    location: 'Via Angelo Tavanti 23, Firenze, Italy',
-    categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-    starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-    mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 
-    //ES56 enhanced i=object literals
-    openingHours,
+  //ES56 enhanced i=object literals
+  openingHours,
 
-    // order: function (starterIndex, mainIndex) {
-    //   return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-    // },
-    order(starterIndex, mainIndex) {
-        return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-    },
+  // order: function (starterIndex, mainIndex) {
+  //   return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  // },
+  order(starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
 
-    orderDelivary: function ({ starterIndex = 1, mainIndex = 0, time = '20 :00', address }) {
-        console.log(`Order recieved! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`);
-    },
+  orderDelivary: function ({ starterIndex = 1, mainIndex = 0, time = '20 :00', address }) {
+    console.log(`Order recieved! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`);
+  },
 
-    orderPasta: function (ing1, ing2, ing3) {
-        console.log(`Here is your delecious pasta with ${ing1},${ing2} and ${ing3}`);
-    },
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`Here is your delecious pasta with ${ing1},${ing2} and ${ing3}`);
+  },
 
-    orderPizza: function (mainIngrediant, ...otherIngrediants) {  //rest
-        console.log(mainIngrediant);
-        console.log(otherIngrediants);
-    }
+  orderPizza: function (mainIngrediant, ...otherIngrediants) {  //rest
+    console.log(mainIngrediant);
+    console.log(otherIngrediants);
+  }
 };
 
 //Here property mon is absent 
 if (restaurant.openingHours && restaurant.openingHours.mon)
-    console.log(restaurant.openingHours.mon.open);
+  console.log(restaurant.openingHours.mon.open);
 
 //With optional chain
 //If mon exists, it will access the open property. which prevents error and gives undefined instead
@@ -833,23 +833,261 @@ GOOD LUCK 😀
 // }
 
 //STRING
-const airline = 'TAP Air portugal';
-const plane = 'A320';
+// const airline = 'TAP Air Portugal';
+// const plane = 'A320';
 
-console.log(plane[0]);
-console.log(plane[1]);
-console.log(plane[2]);
-console.log('B737'[0]);
+// console.log(plane[0]);
+// console.log(plane[1]);
+// console.log(plane[2]);
+// console.log('B737'[0]);
 
-console.log(airline.length);
-console.log('B737'.length);
+// console.log(airline.length);
+// console.log('B737'.length);
 
-console.log(airline.indexOf('r'));  //first
-console.log(airline.lastIndexOf('r'));  //last
-console.log(airline.indexOf('portugal'));
+// console.log(airline.indexOf('r'));  //first
+// console.log(airline.lastIndexOf('r'));  //last
+// console.log(airline.indexOf('portugal'));
 
-console.log(airline.slice(4));
-console.log(airline.slice(4, 7));    //starts from 4 and ends at 6
+// console.log(airline.slice(4));
+// console.log(airline.slice(4, 7));    //starts from 4 and ends at 6
 
-console.log(airline.slice(0, airline.indexOf(' ')));
-console.log(airline.slice(airline.lastIndexOf(' ')));
+// console.log(airline.slice(0, airline.indexOf(' ')));
+// console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+
+// console.log(airline.slice(-2));
+// console.log(airline.slice(1, -1));
+// console.log(airline.slice(-1, 1));
+
+// //Practice
+// const checkMiddleSeat = function (seat) {
+//   //B and E are the middle seats
+//   const s = seat.slice(-1);
+//   if (s === 'B' || s === 'E') console.log('YOU GOT LUCKY MIDDLE SEAT ');
+//   else console.log('You got lucky');
+// }
+
+// checkMiddleSeat('11B');
+// checkMiddleSeat('23C');
+// checkMiddleSeat('3E');
+
+/*//In JavaScript, you can convert a string primitive (a basic string value) into a String object
+let strPrimitive = "Hello"; // String primitive
+let strObject = new String(strPrimitive); // String object
+console.log(typeof strPrimitive); // "string"
+console.log(typeof strObject); // "object"
+*/
+
+// console.log(new String('jonas'));
+// console.log(typeof new String('jonas'));
+
+// console.log(typeof new String('jonas').slice(1));
+
+//String methods
+// console.log(airline.toLowerCase());
+// console.log(airline.toUpperCase());
+
+//Fix capitalization
+// const passenger = 'joNas' //Jonas
+// const passengerLower = passenger.toLowerCase();
+// const passengerCorrect = passengerLower[0].toUpperCase() + passengerLower.slice(1);
+// console.log(passengerCorrect);
+
+//Comparing email
+// const email = 'hello@stella.io';
+// const loginEmail = 'Hello@Stella.Io \n'; //these both are quite similar
+
+// const lowerEmail = loginEmail.toLowerCase();
+// const trimmedEmail = lowerEmail.trim();
+// console.log(trimmedEmail);
+
+// const normalizedEmail = loginEmail.toLowerCase().trim();
+// console.log(email === normalizedEmail); 
+
+// const email = function (mail) {
+//   let lowerEmail = mail.toLowerCase();
+//   let trimEmail = lowerEmail.replace(/\s+/g, '');
+//   return trimEmail;
+// }
+
+// console.log(email('JoNas@gmai  l.com'));
+
+//REplace
+// const priceGB = '288,97€';
+// const priceUS = priceGB.replace('€', '$').replace(',', '.');
+// console.log(priceUS);
+
+// const announcement = 'All passengers come to boarding door 23,Boarding door 23.';
+// console.log(announcement.replace('door', 'gate'));
+// // console.log(announcement.replaceAll('door', 'gate'));
+// //REgular expressions
+// console.log(announcement.replace('/door/g', 'gate'));
+
+// //Booleans
+// const plane = 'Airbus A320neo';
+// console.log(plane.includes('A320'));
+// console.log(plane.includes('neo'));
+// console.log(plane.includes('Airbus'));
+// console.log(plane.includes('AirbusA320neo'));
+
+// if (plane.startsWith('Airbus') && plane.endsWith('neo')) {
+//   console.log(`Part of the new Airbus family`);
+// }
+
+// //Practice Exercise
+// const checkBaggage = function (items) {
+//   const baggage = items.toLowerCase();
+//   if (baggage.includes('knife') || baggage.includes('gun')) {
+//     console.log('You are not allowed on board');
+//   } else {
+//     console.log('Welcome abroad!');
+//   }
+
+// }
+// checkBaggage('I have laptop,Food and a pocket knife');
+// checkBaggage('Socks and camera');
+// checkBaggage('Got some snacks and a gun for protection');
+
+//split method
+// console.log(('a+very+nice+string').split('+'));
+// console.log(('Jonas schmedtmann').split(' '));
+
+// const [firstName, lastName] = 'Jonas SChmedtmann'.split(' ');
+
+// //join method
+// const newName = ['Mr', firstName, lastName.toUpperCase()].join(' ');
+// console.log(newName);
+
+
+// const capitalizeNAme = function (name) {
+//   const names = name.split(' ');
+//   const namesUpper = [];
+
+//   for (const n of names) {
+//     namesUpper.push(n[0].toUpperCase() + n.slice(1));
+//   }
+//   console.log(namesUpper.join(' '));
+// };
+
+// capitalizeNAme('jessica and amith davind');
+// capitalizeNAme('vishrutha bhat abraje');
+
+//Pading
+// const message = 'Go to gate 23!';
+// console.log(message.padStart(25, '+').padEnd(35, '+'));
+// console.log('Johny'.padStart(6, '+'))
+
+// //Credit card Masking
+// const maskCreditCard = function (number) {
+//   const str = number + '';  // Step 1: Convert the number to a string
+//   //Here it is converted coz the padding,slice mthd works with string
+//   const last = str.slice(-4);
+//   return last.padStart(str.length, '*');
+// }
+
+// console.log(maskCreditCard(453666634545654656343));
+// console.log(maskCreditCard('58923842895100986246519691')
+// );
+
+
+// const maskEmail = function (mail) {
+//   const [username, domain] = mail.split('@'); // Split email into username and domain
+//   const firstChar = username[0]; // Get the first character of username
+//   const maskedPart = '*'.repeat(username.length - 1); // Replace rest with '*'
+//   return firstChar + maskedPart + '@' + domain; // Combine masked username with domain
+// }
+
+// console.log(maskEmail('vidhathribhat24@gmail.com'));
+
+
+// const phoneNum = function (num) {
+//   const first = num + '';
+//   const sliceNum = first.slice(-4);
+//   return sliceNum.padStart(first.length, '*');
+// }
+
+// const num = '4234253245';
+// console.log(phoneNum(num));
+
+// const maskPhoneNo = num => num.slice(-4).padStart(num.length, '*');
+// const num = '4234253245';
+// console.log(maskPhoneNo(num));
+
+
+//Repeat
+// const message2 = 'Bad weather... All Departues Delayed...';
+// console.log(message2.repeat(5));
+
+// const planesInline = function (n) {
+//   console.log(`There are ${n} planes in line ${'plane'.repeat(n)}`);
+// }
+
+// planesInline(5);
+// planesInline(3);
+// planesInline(12);
+
+//Concate
+// const begin = "hello";
+// const end = begin.concat(" dhathri!");
+// console.log(end);
+
+///////////////////////////////////////
+// Coding Challenge #4
+
+
+/*Write a program that receives a list of variable names written in underscore_case and convert them to camelCase.
+
+The input will come from a textarea inserted into the DOM (see code below), and conversion will happen when the button is pressed.
+
+THIS TEST DATA (pasted to textarea)
+underscore_case
+ first_name
+Some_Variable 
+  calculate_AGE
+delayed_departure
+
+SHOULD PRODUCE THIS OUTPUT (5 separate console.log outputs)
+underscoreCase      ✅
+firstName           ✅✅
+someVariable        ✅✅✅
+calculateAge        ✅✅✅✅
+delayedDeparture    ✅✅✅✅✅
+
+HINT 1: Remember which character defines a new line in the textarea 😉
+HINT 2: The solution only needs to work for a variable made out of 2 words, like a_b
+HINT 3: Start without worrying about the ✅. Tackle that only after you have the variable name conversion working 😉
+HINT 4: This challenge is difficult on purpose, so start watching the solution in case you're stuck. Then pause and continue!
+
+Afterwards, test with your own test data!
+*/
+// document.body.append(document.createElement('textarea'));
+// document.body.append(document.createElement('button'));
+
+
+// document.querySelector('button').addEventListener('click', function () {
+//   const text = document.querySelector('textarea').value;
+//   const rows = text.split('\n');
+//   console.log(text);
+
+//   for (const [i, row] of rows.entries()) {
+//     const [first, second] = row.toLowerCase().trim().split('_');
+
+//     const output = `${first}${second.replace(
+//       second[0],
+//       second[0].toUpperCase()
+//     )}`;
+//     console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
+
+//   }
+// });
+
+///////////////////////////////////////
+// String Methods Practice
+
+const flights =
+  '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
+
+// 🔴 Delayed Departure from FAO to TXL (11h25)
+//              Arrival from BRU to FAO (11h45)
+//   🔴 Delayed Arrival from HEL to FAO (12h05)
+//            Departure from FAO to LIS (12h30)
+
