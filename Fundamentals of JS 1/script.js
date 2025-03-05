@@ -431,3 +431,87 @@ HINT: Value X is between 50 and 300, if it's >= 50 && <= 300
 // console.log(`The bill was ${bill},the tip was ${tip},and the total value is ${bill + tip}`);
 
 // console.log(tip);   //bill <= 300 && bill >= 50  fasle for 40, 430S
+
+
+///////////////////////////////////////////////////
+//Revision
+// // let java = "language";
+// // console.log(java);
+// // let javaScript = "Fun";
+// // console.log(Boolean(javaScript));
+
+// // let year;
+// // console.log(year);
+// // console.log(typeof year);
+
+// // console.log(typeof null);
+
+// // //
+// // let age = 30;
+// // age = 31;
+// // console.log(age);
+
+// //let keyword
+// // let eat;
+// // console.log(eat);
+// // eat = 23;
+
+// //var keyword
+// // console.log(a); // ✅ undefined (Hoisted but not initialized)
+// // var a = 10;
+// // console.log(a); // ✅ 10
+
+
+// // b = 20;  // No `var`, `let`, or `const`
+// // console.log(b); // ✅ 20 (Created as a global variable)
+
+
+// //operators
+
+// //Math operators
+// const now = 2045;
+// const ageDhathri = now - 2025;
+// const ageRax = now - 2026;
+// console.log(ageDhathri, ageRax);
+
+// // console.log(ageDhathri * 2, ageDhathri / 10, 2 ** 3);
+
+// // const firstName = 'Vidhathri';
+// // const lastName = 'Bhat A';
+// // console.log(firstName + ' ' + lastName);
+// // console.log(20 - 16);
+
+// // console.log("5" + 2);  // '52' (String Concatenation)
+// // console.log("5" - 2);  // 3   (String converted to Number)
+// // console.log("5" * 2);  // 10  (String converted to Number)
+// // console.log("5" / 2);  // 2.5 (String converted to Number)
+// // console.log("2" ** "3"); // 8  (Exponentiation also converts to Number)
+// // //Here, Only + Concatenates, and Other Operators Convert Strings to Numbers
+
+// // console.log("5" + "4");
+
+// // console.log("Hello" - 5); // NaN (Not a Number)
+// // console.log("10px" - 2);  // NaN (Cannot convert "10px" to a number)
+// // console.log("10" + 5 + 3);  //1053
+// // console.log("10" * "2" + 3); // 23
+// // console.log("10" + 2 * 3); // "106"
+
+
+// //Assignment operators
+// // let x = 10 + 5;
+// // x += 10;    //x=x+10
+// // x *= 4;
+// // console.log(x);
+
+// // let y = 10;
+// // y += y;
+// // y--;
+// // --y;
+// // console.log(y);
+
+// // let b = 5;
+// // console.log(b++); // 5 (Prints first, then increments)
+// // console.log(b);   // 6 (Value is increased after the previous statement)
+
+// //Comparision operator
+// if (ageDhathri > ageRax) console.log(ageDhathri);
