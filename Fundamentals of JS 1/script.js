@@ -515,3 +515,47 @@ HINT: Value X is between 50 and 300, if it's >= 50 && <= 300
 
 // //Comparision operator
 // if (ageDhathri > ageRax) console.log(ageDhathri);
+
+
+// let x, y;
+// x = y = 25 - 10 - 5;
+// console.log(x, y);
+
+// const averageAge = ageDhathri + ageRax / 2;
+// console.log(ageDhathri, ageRax, averageAge);
+
+//Coding challenge 1
+
+// // const markWeight = 78;
+// // const markHeight = 1.69;
+
+// // const johnWeight = 92;
+// // const johnHeight = 1.95;
+
+// const markWeight = 95;
+// const markHeight = 1.88;
+
+// const johnWeight = 85;
+// const johnHeight = 1.76;
+
+// const markBmi = markWeight / markHeight ** 2;
+// const johnBmi = johnWeight / johnHeight ** 2;
+
+// const markHigherBMI = console.log(Boolean(markBmi > johnBmi));
+// console.log(markBmi, johnBmi);
+
+//Strings and template literals
+
+const firstName = 'Dhathri';
+const current = "Student";
+const birthYear = 2005;
+const year = 2025;
+
+const Dhathri = "I'm " + firstName + ',a ' + (year - birthYear) + ' year old ' + current;
+console.log(Dhathri);
+
+// const new = hello;   //reserved keywords
+const newVar = `Hello this is ${firstName},\nA ${year - birthYear} old ${current}`;
+console.log(newVar);
+
+//Taking Decisions
