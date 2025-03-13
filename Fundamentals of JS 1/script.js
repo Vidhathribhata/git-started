@@ -558,4 +558,27 @@ console.log(Dhathri);
 const newVar = `Hello this is ${firstName},\nA ${year - birthYear} old ${current}`;
 console.log(newVar);
 
+
+// const dhathriNew = `I am ${firstName}`;
+// console.log(dhathriNew);
+
+// console.log(`String with\nmultiple\nlines:)\n`)
+
 //Taking Decisions
+
+const age = 9;
+if (age >= 18) {
+    console.log(`Is old enough`);
+} else {
+    console.log(`Too young`);
+}
+
+const year = 2004;
+birthYear = 1999;
+if (birthYear <= 1996) {
+    console.log(`Gen z`);
+} else if (birthYear >= 1981 && birthYear <= 1990) {
+    console.log(`Millenial`);
+} else {
+    console.log(`Gen X`)
+}
