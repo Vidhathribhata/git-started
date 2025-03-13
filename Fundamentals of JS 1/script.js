@@ -566,19 +566,86 @@ console.log(newVar);
 
 //Taking Decisions
 
-const age = 9;
-if (age >= 18) {
-    console.log(`Is old enough`);
-} else {
-    console.log(`Too young`);
-}
+// const age = 9;
+// if (age >= 18) {
+//     console.log(`Is old enough`);
+// } else {
+//     console.log(`Too young`);
+// }
 
-const year = 2004;
-birthYear = 1999;
-if (birthYear <= 1996) {
-    console.log(`Gen z`);
-} else if (birthYear >= 1981 && birthYear <= 1990) {
-    console.log(`Millenial`);
-} else {
-    console.log(`Gen X`)
-}
+// const year = 2004;
+// birthYear = 1999;
+// if (birthYear <= 1996) {
+//     console.log(`Gen z`);
+// } else if (birthYear >= 1981 && birthYear <= 1990) {
+//     console.log(`Millenial`);
+// } else {
+//     console.log(`Gen X`)
+// }
+
+//Exercise
+// let num = 7;
+
+// if (num % 2) {
+//     console.log("The number is even.");
+// } else {
+//     console.log("The number is odd.");
+// }
+
+//////
+// let num = 10;
+
+// if (num = 5) {
+//     console.log("The number is five.");
+// } else {
+//     console.log("The number is not five.");
+// }
+
+/////
+// let score = "85";
+
+// if (score === 85)
+//     console.log("You passed!");
+// else if (score > 50)
+//     console.log("Good job!");
+// else
+//     console.log("Try again!");
+
+////
+
+// let num = 30;
+// if (num > 10)
+//     console.log("Number is greater than 10");
+//     console.log("This always prints!");
+
+////
+// let x = "10";
+// if (x == 10) {
+//     console.log("x is loosely equal to 10");
+// } else {
+//     console.log("x is NOT loosely equal to 10");
+// }
+
+//////
+// let temperature = 30;
+// if temperature > 25 {
+//     console.log("It's a hot day!");
+// }
+
+/////
+// let weather = "rainy";
+// if (weather = "sunny") {
+//     console.log("Wear sunglasses!");
+// } else {
+//     console.log("Take an umbrella!");
+// }
+/////
+
+//Type conversion snd coersion
+
+// const inputYear = "1991";
+// console.log(Number(inputYear), inputYear);  //The original is not converted ,its still a string
+// console.log(inputYear + 18);
+// console.log(Number(inputYear) + 18);
+
+// console.log(Number(`Dhathri`));
