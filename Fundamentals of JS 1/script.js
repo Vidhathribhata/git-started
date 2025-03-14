@@ -641,7 +641,7 @@ console.log(newVar);
 // }
 /////
 
-//Type conversion snd coersion
+//Type conversion
 
 // const inputYear = "1991";
 // console.log(Number(inputYear), inputYear);  //The original is not converted ,its still a string
@@ -649,3 +649,136 @@ console.log(newVar);
 // console.log(Number(inputYear) + 18);
 
 // console.log(Number(`Dhathri`));
+
+// console.log(typeof NaN);
+
+// console.log(String(23));        //It is a string
+// console.log(23);                //It is a number
+
+//Type coersion
+
+// console.log('Iam ' + 23 + ' years old');
+// console.log('23' - '10' - '3');
+// console.log('23' + '10' + '3');
+// console.log('23' * '10' * '3');
+
+// let n = '1' + 1;
+// n = n - 1;
+// console.log(n);
+
+//Truthy and falsy values
+//falsy are not false ,they will be false when tried to convert it into a boolean.Everything else is called truthy
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean('Jonas'));
+// console.log(Boolean({}));
+// console.log(Boolean(''));
+
+// const money = 0;        // 0 is a falsy value
+// if (money) {            // Since 0 is falsy, this condition is false
+//     console.log(`Dont spend it all`);
+// } else {
+//     console.log(`You should get a job!`);       // This block executes
+// }
+
+// let height;
+// if (height) {
+//     console.log(`YAY! height is defined`);
+// } else {
+//     console.log('Height is undefined');
+// }
+
+// if ("") {
+//     console.log("Truthy");
+// } else {
+//     console.log("Falsy");       // Falsy (because an empty string "" is falsy)
+// }
+
+// if ([]) {
+//     console.log("Truthy");
+// } else {
+//     console.log("Falsy");       //Truthy (because an empty array [] is truthy)
+// }
+
+// if ("0") {
+//     console.log("Truthy");      // Truthy (because "0" is a non-empty string)
+// } else {
+//     console.log("Falsy");
+// }
+
+// Boolean(Infinity)           //true (because Infinity is truthy)
+
+//Practice Questions
+// if (-1) {
+//     console.log("Truthy");
+// } else {
+//     console.log("Falsy");
+// }
+// //Truthy
+
+// if (false) {
+//     console.log("Truthy");
+// } else {
+//     console.log("Falsy");
+// }
+// //Falsy
+
+// if ("false") {
+//     console.log("Truthy");
+// } else {
+//     console.log("Falsy");
+// }
+// //Truthy
+
+// console.log(Boolean({ key: "value" }));
+// //Truthy
+
+// const x = !!0;
+// console.log(x);
+// //false
+
+// if (" ") {
+//     console.log("Truthy");
+// } else {
+//     console.log("Falsy");
+// }
+// //truthy
+
+// if (document.all) {
+//     console.log("Truthy");
+// } else {
+//     console.log("Falsy");
+// }
+//Falsy
+
+// console.log(Boolean([] == false));
+//true
+//[] == false is true because JavaScript converts [] to an empty string "", which is falsy.
+//Boolean([] == false) becomes Boolean(true), which is true.
+
+// if (!!"false" == !!"true") {
+//     console.log("Truthy");
+// } else {
+//     console.log("Falsy");
+// }
+//Truthy
+
+// if ([] == ![]) {
+//     console.log("Truthy");
+// } else {
+//     console.log("Falsy");
+// }
+//Truthy
+
+// if (null == undefined) {
+//     console.log("Truthy");
+// } else {
+//     console.log("Falsy");
+// }
+//Truthy
+
+//Equality operators
+// const age = '18';
+// if (age === 18) console.log(`You just became an adult(strict)`);
+
+// if (age == 18) console.log(`You just became an adult(loose)`);
