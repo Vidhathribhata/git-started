@@ -546,17 +546,17 @@ HINT: Value X is between 50 and 300, if it's >= 50 && <= 300
 
 //Strings and template literals
 
-const firstName = 'Dhathri';
-const current = "Student";
-const birthYear = 2005;
-const year = 2025;
+// const firstName = 'Dhathri';
+// const current = "Student";
+// const birthYear = 2005;
+// const year = 2025;
 
-const Dhathri = "I'm " + firstName + ',a ' + (year - birthYear) + ' year old ' + current;
-console.log(Dhathri);
+// const Dhathri = "I'm " + firstName + ',a ' + (year - birthYear) + ' year old ' + current;
+// console.log(Dhathri);
 
-// const new = hello;   //reserved keywords
-const newVar = `Hello this is ${firstName},\nA ${year - birthYear} old ${current}`;
-console.log(newVar);
+// // const new = hello;   //reserved keywords
+// const newVar = `Hello this is ${firstName},\nA ${year - birthYear} old ${current}`;
+// console.log(newVar);
 
 
 // const dhathriNew = `I am ${firstName}`;
@@ -782,3 +782,46 @@ console.log(newVar);
 // if (age === 18) console.log(`You just became an adult(strict)`);
 
 // if (age == 18) console.log(`You just became an adult(loose)`);
+
+// let favourite = prompt("What's your favourite number?");
+// console.log(favourite);
+// console.log(typeof favourite);
+
+// if (favourite === 23) {  //since favourite is not a number it will give error,even though it is 23
+//     console.log(`Cool, ${favourite} is an amazing number`);
+// }
+
+
+// let favourite = Number(prompt("What's your favourite number?"));
+// console.log(favourite);
+// console.log(typeof favourite);
+
+// if (favourite === 23) {
+//     console.log(`Cool, ${favourite} is an amazing number`);
+// } else if (favourite == 7) {
+//     console.log(`${favourite} is also a cool number`);
+// }
+
+// if (favourite !== 23) console.log(`Why not 23?`);
+
+// Debugging Questions:
+
+// What happens if the user enters "hello"?
+// What will console.log(typeof favourite); output if the user enters "" (an empty string)?
+// Why do we use Number(prompt(...)) instead of keeping prompt(...) as a string?
+// What happens if the user enters null by pressing "Cancel" in the prompt box?
+// What would be a better way to check if the user entered a valid number before proceeding?
+
+
+//Boolean logic
+
+// const hasDriversLicense = true;
+// const hasGoodVision = true;
+// console.log(hasDriversLicense && hasDriversLicense);
+// console.log(hasDriversLicense || hasDriversLicense);
+
+// const hasDriversLicense = true;
+// const hasGoodVision = false;
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasDriversLicense);
+// console.log(!hasDriversLicense);
