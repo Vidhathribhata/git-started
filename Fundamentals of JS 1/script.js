@@ -888,6 +888,59 @@ HINT: Value X is between 50 and 300, if it's >= 50 && <= 300
 // }
 
 
+
+//5 Age Group Detector
+
+// let ageOfPerson = prompt("Enter the age");
+// console.log(ageOfPerson);
+
+// if (ageOfPerson === null || ageOfPerson.trim() === "") {
+//     console.log(`Empty`);
+// } else {
+//     let userInput = Number(ageOfPerson.trim())
+
+//     if (isNaN(userInput) || userInput < 0) console.log(`Invalid`);
+//     else {
+//         if (userInput <= 12) {
+//             console.log(`Child`);
+//         } else if (userInput <= 19) {
+//             console.log(`Teen`);
+//         } else if (userInput <= 64) {
+//             console.log(`Adult`);
+//         } else {
+//             console.log(`Senior`);
+//         }
+
+//     }
+// }
+
+
+//6  Simple Calculator
+// let firstNumber = (prompt("Enter the first Number").trim());
+// let secondNumber = (prompt("Enter the second Number").trim());
+// let calcOperater = prompt("Enter the Operation to be done").trim();
+
+// if (firstNumber === "" || secondNumber === "") console.log(`Ivalid`);
+// else {
+
+//     firstNumber = Number(firstNumber);
+//     secondNumber = Number(secondNumber);
+
+//     if (isNaN(firstNumber) || isNaN(secondNumber)) console.log(`Invalid`);
+
+//     else if (calcOperater === null || calcOperater === "") console.log(`Invalid`);
+//     else if (calcOperater === '+') console.log(firstNumber + secondNumber);
+//     else if (calcOperater === '-') console.log(firstNumber - secondNumber);
+//     else if (calcOperater === '*') console.log(firstNumber * secondNumber);
+//     else if (calcOperater === '/') {
+//         if (secondNumber === 0) console.log(`Cannot divide by zero`);
+//         else console.log(firstNumber / secondNumber);
+//     }
+
+// }
+
+
+
 //Boolean logic
 
 // const hasDriversLicense = true;
