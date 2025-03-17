@@ -812,6 +812,81 @@ HINT: Value X is between 50 and 300, if it's >= 50 && <= 300
 // What happens if the user enters null by pressing "Cancel" in the prompt box?
 // What would be a better way to check if the user entered a valid number before proceeding?
 
+// Challenge:
+// Modify the code to handle invalid inputs (like "hello", null, or an empty string) before proceeding
+
+// let favourite = prompt("Enter the number");
+// console.log(typeof favourite);
+// if (favourite === "hello") console.log(`Good`);
+// else if (favourite === null || favourite === "") console.log(`It's empty`);
+// else if (isNaN(favourite)) {
+//     console.log(`That's not a number!`);
+// };
+
+//2 Write a program that asks the user for a number and prints:
+
+// let userNumber = (prompt("Enter the user number"));
+// console.log(typeof userNumber);
+// console.log(userNumber);
+
+// if (userNumber === "" || userNumber === null) console.log(`It is empty`);
+// else {
+//     let userInput = Number(userNumber);
+
+//     if (isNaN(userInput)) console.log(`That's not a valid number`);
+//     else {
+//         console.log(`It's a valid number`);
+//     }
+// }
+
+
+//"number" is a data type (used with typeof).
+// Number is a function (used to convert values).
+// Use isNaN() to check if a value is not a valid number.
+
+//3  Even or Odd Checker
+
+// let userInput = prompt(`Enter a number`);
+// console.log(typeof userInput);
+// console.log(userInput);
+
+// if (userInput === null || userInput.trim() === "") {
+//     console.log(`Empty`);
+// }
+// else {
+//     let userNumber = Number(userInput.trim());
+//     if (isNaN(userNumber)) console.log(`It is not a number`);
+//     else {
+//         console.log(`It is a number`);
+//         if (userNumber % 2 === 0) console.log(`It is even`);
+//         else console.log(`It is an odd number`);
+//     }
+
+
+// }
+
+//4: Positive, Negative, or Zero
+// let userNumber = prompt("Enter the number");
+// console.log(userNumber);
+
+// if (userNumber === null || userNumber.trim() === "") {
+//     console.log(`Empty`);
+// } else {
+//     let userInput = Number(userNumber.trim())
+//     console.log(typeof userInput);
+
+//     if (isNaN(userInput)) console.log(`It is not a number`);
+//     else {
+//         if (userInput > 0) {
+//             console.log(`It is a positive number`);
+//         } else if (userInput < 0) {
+//             console.log(`It is a negative number`);
+//         } else {
+//             console.log(`It is zero`);
+//         }
+//     }
+// }
+
 
 //Boolean logic
 
