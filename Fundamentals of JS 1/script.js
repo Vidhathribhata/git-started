@@ -953,3 +953,38 @@ HINT: Value X is between 50 and 300, if it's >= 50 && <= 300
 // console.log(hasDriversLicense && hasGoodVision);
 // console.log(hasDriversLicense || hasDriversLicense);
 // console.log(!hasDriversLicense);
+
+//Switch statement
+// const day = 'thursday';
+
+// switch (day) {
+//     case 'monday': console.log('Plan course structure');
+//         break;
+//     case 'tuesday': console.log('Start to work on the planned strucutre');
+//         break;
+//     case 'wednesday': console.log('Take a break');
+//         break;
+//     case 'thursday': console.log('Continue to work on it');
+//         break;
+//     case 'friday': console.log('Keep it on..');
+//         break;
+//     case 'saturday':
+//     case 'sunday': console.log('ENJOY THE WEEKEND');
+//         break;
+// }
+
+// if (day === 'monday') {
+//     console.log('Plan course structure');
+// } else if (day === 'tuesday') {
+//     console.log('Start to work on the planed strucutre');
+// } else if (day === 'wednesday') {
+//     console.log('Take a break');
+// } else if (day === 'thursday') {
+//     console.log('Continue to work on it');
+// } else if (day === 'friday') {
+//     console.log('Keep it on..');
+// } else if (day === 'saturday' || day === 'sumday') {
+//     console.log('ENJOY THE WEEKEND');
+// } else {
+//     console.log('Invalid');
+// }
