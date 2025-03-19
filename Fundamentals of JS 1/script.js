@@ -988,3 +988,25 @@ HINT: Value X is between 50 and 300, if it's >= 50 && <= 300
 // } else {
 //     console.log('Invalid');
 // }
+
+//Statements and expressions
+
+// //expressions
+// 3 + 4
+// 1991
+// true && false && !true
+
+//Statements
+// if (23 > 10) {
+//     const str = `23 is bigger`;
+// }
+
+// const me = `Dhathri`;
+// console.log(`Iam ${me},${2037 - 2017} years old`);
+//here me,${2037 - 2017} is an expression
+
+// let a = 10;         // Statement
+// let b = a * 5;      // Statement (contains an expression `a * 5`)
+// if (b > 20) {       // Statement (contains an expression `b > 20`)
+//     console.log("Large value");  // Statement
+// }
